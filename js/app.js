@@ -35,7 +35,7 @@ d3.csv("data/data.csv").then(function (povertyData) {
         data.healthcare = +data.healthcare;
     });
 
-    // create scale functions
+    // create scale functions....... had to expand to get the bubbles to fit 
     var xScale = d3.scaleLinear()
         .domain([d3.min(povertyData, d => d.poverty) * 0.9, d3.max(povertyData, d => d.poverty) * 1.1])
         .range([0, width]);
